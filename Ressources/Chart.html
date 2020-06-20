@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- BD-Header !-->
+		<title>déc. 2018- MSSArchamps</title>
+		<!-- BF-Header !-->
+		<!-- Head of meta content !-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<!-- Head of css content by link  !-->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+			crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous">
+		<link href="css\site.min.css" rel="stylesheet">
+		<link href="css\W3.css" rel="stylesheet">
+		<!-- Style personnel !-->
+
+		<!-- Head of theme content !-->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+			integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+			crossorigin="anonymous">
+
+		<!-- Head of js content !-->
+		<script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- js D3 !-->
+		<script src="js\d3.min.js"></script>
+		<!--script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script!-->
+		<script src="js\canvasjs.min.js"></script>
+
+		<!-- js AmChart !-->
+		<script src="js\amcharts.js"></script>
+		<script src="js\serial.js"></script>
+		<script src="js\gauge.js"></script>
+		<script src="js\radar.js"></script>
+		<script src="js\lang\fr.js"></script>
+		<script src="js\export.min.js"></script>
+		<script src="js\themes\light.js"></script>
+
+		<!-- Style personnel qui Bypass les styles chargées !-->
+		<style>
+			.round-button
+			{
+				display:block;
+				width:90%;
+				height:170px;
+				border: 10px solid #f5f5f5;
+				border-radius: 50px;
+				color:#f5f5f5;
+				text-decoration:none;
+				text-align:center;
+				vertical-align: middle;
+				background: rgb(179, 0, 0);
+				margin:10px;
+				box-shadow: 0 0 3px gray;
+				font-size:30px;
+				line-height: 150px;
+				font-weight:bold;
+				font-size:30px;
+			}
+			.round-button:hover
+			{
+				background: rgb(204, 204, 0);
+				color:#ff0000;
+			}
+			.Cadre
+			{
+				border: 2px dashed #f5f5f5;
+				border-width:0px 2px 0px 2px;
+				display:inline-block;
+				color:#0080ff;
+				border-radius:50px;
+				width:200px
+			}
+		</style>
+	</head>
+	<body style="padding-top:10px;background:#333333">
+		<div class="row">
+			<div class="col-md-4" style="text-align:center">
+				<div class="row">
+					<h3 style="display:inline-block;text-align:left;margin-left:50px;margin-left:5%;color:white ;width:200px" >Consigne (N)</h3>
+					<div class="Cadre">
+						<h3 id="ConsigneMesure" style="display:inline">0</h3>
+					</div>
+				</div>
+				<div class="row">
+					<h3 style="display:inline-block;text-align:left;margin-left:50px;margin-left:5%;color:white ;width:200px" >Load (N)</h3>
+					<div class="Cadre">
+						<h3 id="LoadMesure" style="display:inline">0</h3>
+					</div>
+				</div>
+				<div class="row">
+					<h3 style="display:inline-block;text-align:left;margin-left:50px;margin-left:5%;color:white ;width:200px" >Position (mm)</h3>
+					<div class="Cadre">
+						<h3 id="PositionMesure" style="display:inline">0</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" style="text-align:center">
+				<div class="row">
+					<h3 style="display:inline-block;text-align:left;margin-left:50px;margin-left:5%;color:white ;width:200px" >Mesure Id1</h3>
+					<div class="Cadre">
+						<h3 id="Id1" style="display:inline">0</h3>
+					</div>
+				</div>
+				<div class="row">
+					<h3 style="display:inline-block;text-align:left;margin-left:50px;margin-left:5%;color:white ;width:200px" >Mesure Id2</h3>
+					<div class="Cadre">
+						<h3 id="Id2" style="display:inline">0</h3>
+					</div>
+				</div>
+				<div class="row">
+					<h3 style="display:inline-block;text-align:left;margin-left:50px;margin-left:5%;color:white ;width:200px" >Mesure Id3</h3>
+					<div class="Cadre">
+						<h3 id="Id3" style="display:inline">0</h3>
+					</div>
+				</div>
+				<div class="row">
+					<h3 style="display:inline-block;text-align:left;margin-left:50px;margin-left:5%;color:white ;width:200px" >Mesure Id4</h3>
+					<div class="Cadre">
+						<h3 id="Id4" style="display:inline">0</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="round-button">ARRET D'URGENCE</div>
+			</div>
+		</div >
+		<div class="row" style="text-align:center;background-color: #F1F1F1 !important;background-position: left top;background-repeat: no-repeat;border-top-width:0px; margin-top:50px;padding-left:20px;padding-right:20px">
+			<!--div id="ErrorChartDiv" style="width:100%; height:700px"></div!-->
+			<div id="chartContainer" style="height: 700px; width:95%;margin:2.5%"></div>
+		</div>
+		<script type="text/javascript">
+
+			//***************************************************************************************
+			//***************************************************************************************
+			//partie Chart PPM
+			//***************************************************************************************
+			//***************************************************************************************
+
+			var ErrorData = [];
+			var ErrorLoadChart;
+			GoForErrorChart();
+
+			function GoForErrorChart()
+			{
+				 ErrorLoadChart = AmCharts.makeChart("ErrorChartDiv", {
+					"type": "serial",
+					"theme": "light",
+					"marginTop":0,
+					"marginRight": 80,
+					"decimalSeparator": ",",
+					"legend": {"equalWidths": false,"useGraphSettings": false,"valueAlign": "left","valueWidth": 120},
+					"thousandsSeparator": " ",
+					"language": "fr",
+					"dataProvider":ErrorData,
+					"valueAxes": [{"axisAlpha": 0,"position": "left"}],
+					"graphs":
+					[
+						{
+							"id":"g1",
+							"balloonText": "Error Load<br><b><span style='font-size:14px;'>[[value]] N</span></b>",
+							"lineColor": "#0080ff",
+							"lineThickness": 5,
+							"negativeLineColor": "#637bb6",
+							"legendValueText": "([[value]] N)",
+							"type": "smoothedLine",
+							"title": "Erreur Load",
+							"valueField": "value"
+						},
+						{
+							"id":"g2",
+							"lineColor": "#999900",
+							"lineThickness": 1,
+							"balloonText" :"Upper Limit Load<br><b> [[value]] N</b>",
+							"legendValueText": "([[value]] N)",
+							"type": "smoothedLine",
+							"title": "Ull",
+							"valueField": "Ull"
+						},
+						{
+							"id":"g3",
+							"lineColor": "#222200",
+							"lineThickness": 1,
+							"balloonText" :"Lower Limit Load<br><b> [[value]] N</b>",
+							"legendValueText": "([[value]] N)",
+							"type": "smoothedLine",
+							"title": "Lll",
+							"valueField": "Lll"
+						}
+					],
+					"chartScrollbar": {
+						"graph":"g1",
+						"gridAlpha":0,
+						"color":"#888888",
+						"scrollbarHeight":55,
+						"backgroundAlpha":0,
+						"selectedBackgroundAlpha":0.1,
+						"selectedBackgroundColor":"#888888",
+						"graphFillAlpha":0,
+						"autoGridCount":true,
+						"selectedGraphFillAlpha":0,
+						"graphLineAlpha":0.2,
+						"graphLineColor":"#c2c2c2",
+						"selectedGraphLineColor":"#888888",
+						"selectedGraphLineAlpha":1
+					},
+					"chartCursor":
+					{
+						"cursorAlpha": 0.1,
+						"valueLineEnabled":true,
+						"valueLineBalloonEnabled":true,
+						"valueLineAlpha":0.5,
+						"fullWidth":true
+					},
+					"categoryField": "Month",
+					"categoryAxis": {"minPeriod": "MM","minorGridAlpha": 0.1,"minorGridEnabled": true},
+					"export": {"enabled": false}
+				});
+			}
+
+			function GenerateErrorData(step,errorload,ull,lll)
+			{
+				ErrorData.push({ Month: step , value: parseFloat(errorload) , Ull:parseFloat(ull) , Lll:parseFloat(lll) });
+			}
+
+			function LaunchErrorChart()
+			{
+				if (ErrorLoadChart==null)
+				{
+					GoForErrorChart();
+				}
+				else
+				{
+					ErrorLoadChart.write("ErrorChartDiv");
+					GoForErrorChart();
+				}
+			}
+
+			<!-- Fonction permettant la mise a jour des données de mesure issu de l'app !-->
+			function UpdateConsigne(Consigne)
+			{
+				var x = document.getElementById("ConsigneMesure");
+				x.innerText=Consigne;
+			}
+
+			function UpdatePosition(Position)
+			{
+				var x = document.getElementById("PositionMesure");
+				x.innerText=Position;
+			}
+
+			function UpdateLoad(Load)
+			{
+				var x = document.getElementById("LoadMesure");
+				x.innerText=Load;
+			}
+
+			function UpdateId1(id1)
+			{
+				var x = document.getElementById("Id1");
+				x.innerText=id1;
+			}
+
+			function UpdateId2(id2)
+			{
+				var x = document.getElementById("Id2");
+				x.innerText=id2;
+			}
+
+			function UpdateId3(id3)
+			{
+				var x = document.getElementById("Id3");
+				x.innerText=id3;
+			}
+
+			function UpdateId4(id4)
+			{
+				var x = document.getElementById("Id4");
+				x.innerText=id4;
+			}
+
+			var dpsConsigne = [];
+			var dpsMesure = [];
+			var dpsId1 = [];
+			var dpsId2 = [];
+			var dpsId3 = [];
+			var dpsId4 = [];
+			
+			function UpdateId5(xVal,sConsigne,sMesure)
+			{
+				dpsConsigne.push({x: xVal,y: parseFloat(sConsigne)});
+				dpsMesure.push({x: xVal,y: parseFloat(sMesure)});				
+			}			
+				
+			window.onload = function ()
+			{
+				var chart = new CanvasJS.Chart
+				(
+					"chartContainer",
+					{
+						title :{text: "Profil"},
+						axisY:
+						[
+							{
+								includeZero: false,
+								title: "Etuve (°C)",
+								lineColor:"#369EAD",
+								titleFontColor: "#369EAD",
+								labelFontColor: "#369EAD"
+							}
+						],
+						axisY2:
+						[
+							{
+								includeZero: false,
+								title: "Mesure Id (Ohm)",
+								lineColor:"#7F6084",
+								titleFontColor: "#7F6084",
+								labelFontColor: "#7F6084"
+							}
+						],
+						data:
+						[
+							{
+								type: "spline",
+								dataPoints: dpsConsigne,
+								showInLegend: true,
+								name:"Consigne (°C)"
+							},
+							{
+								type: "spline",
+								dataPoints: dpsMesure,
+								showInLegend: true,
+								name:"Mesure (°C)"
+							},
+							{
+								type: "spline",
+								axisYType:"secondary",
+								dataPoints: dpsId1,
+								showInLegend: true,
+								name:"Mesure Id1"
+							},
+							{
+								type: "spline",
+								axisYType:"secondary",								
+								dataPoints: dpsId2,
+								showInLegend: true,
+								name:"Mesure Id2"
+							},
+							{
+								type: "spline",
+								axisYType:"secondary",								
+								dataPoints: dpsId3,
+								showInLegend: true,
+								name:"Mesure Id3"
+							},
+							{
+								type: "spline",
+								axisYType:"secondary",								
+								dataPoints: dpsId4,
+								showInLegend: true,
+								name:"Mesure Id4"
+							}
+						]
+					}
+				);
+
+				var xVal = 0;
+				var yVal = 100;
+				var y2Val = 100;
+				var yValId1 = 100;
+				var yValId2 = 100;
+				var yValId3 = 100;
+				var yValId4 = 100;
+				var updateInterval = 1000;
+				var dataLength = 200; // number of dataPoints visible at any point
+
+				var updateChart1 = function (count)
+				{
+					count = count || 1;
+
+/*
+					for (var j = 0; j < count; j++)
+					{
+						//yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
+						//dpsConsigne.push({x: xVal,y: yVal});
+
+						//y2Val = y2Val +  Math.round(5 + Math.random() *(-5-5));
+						//dpsMesure.push({x: xVal,y: y2Val});
+
+						yValId1 = yValId1 +  Math.round(5 + Math.random() *(-5-5));
+						dpsId1.push({x: xVal,y: yValId1});
+
+						yValId2 = yValId2 +  Math.round(5 + Math.random() *(-5-5));
+						dpsId2.push({x: xVal,y: yValId2});
+
+						yValId3 = yValId3 +  Math.round(5 + Math.random() *(-5-5));
+						dpsId3.push({x: xVal,y: yValId3});
+
+						yValId4 = yValId4 +  Math.round(5 + Math.random() *(-5-5));
+						dpsId4.push({x: xVal,y: yValId4});
+
+						xVal++;
+					}
+*/
+					if (dpsConsigne.length > dataLength)
+					{
+						dpsConsigne.shift();
+						dpsMesure.shift();
+						dpsId1.shift();
+						dpsId2.shift();
+						dpsId3.shift();
+						dpsId4.shift();
+					}
+
+					chart.render();
+				};
+
+				updateChart1(dataLength);
+				setInterval(function(){updateChart1()}, updateInterval);
+			}
+		</script>
+	</body>
+</html>

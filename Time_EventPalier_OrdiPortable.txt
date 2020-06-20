@@ -1,0 +1,25 @@
+-		lTs	Count = 23	System.Collections.Generic.List<System.TimeSpan>
++		[0]	{00:00:00.0789605}	System.TimeSpan
++		[1]	{00:00:00.0179910}	System.TimeSpan
++		[2]	{00:00:00.0089955}	System.TimeSpan
++		[3]	{00:00:00.0169983}	System.TimeSpan
++		[4]	{00:00:00.0089991}	System.TimeSpan
++		[5]	{00:00:00.0079992}	System.TimeSpan
++		[6]	{00:00:00.0109989}	System.TimeSpan
++		[7]	{00:00:00.0239976}	System.TimeSpan
++		[8]	{00:00:00.0099990}	System.TimeSpan
++		[9]	{00:00:00.0139986}	System.TimeSpan
++		[10]	{00:00:00.0069993}	System.TimeSpan
++		[11]	{00:00:00.0229977}	System.TimeSpan
++		[12]	{00:00:00.0099990}	System.TimeSpan
++		[13]	{00:00:00.0089991}	System.TimeSpan
++		[14]	{00:00:00.0080000}	System.TimeSpan
++		[15]	{00:00:00.0070000}	System.TimeSpan
++		[16]	{00:00:00.0130000}	System.TimeSpan
++		[17]	{00:00:00.0110000}	System.TimeSpan
++		[18]	{00:00:00.0460000}	System.TimeSpan
++		[19]	{00:00:00.0140000}	System.TimeSpan
++		[20]	{00:00:00.0270000}	System.TimeSpan
++		[21]	{00:00:00.0080000}	System.TimeSpan
++		[22]	{00:00:00.0570000}	System.TimeSpan
++		Affichage brut		

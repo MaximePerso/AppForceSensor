@@ -1,0 +1,61 @@
++		ListForAverageMeasure	Count = 17	System.Collections.Generic.List<K2000Rs232App.MainWindow.ClassAverageMeasure>
+		dAllDataAverage	error CS0103: Le nom 'dAllDataAverage' n'existe pas dans le contexte actuel	
+		objArray	error CS0103: Le nom 'objArray' n'existe pas dans le contexte actuel	
+-		lTs	Count = 23	System.Collections.Generic.List<System.TimeSpan>
++		[0]	{00:00:00.1404009}	System.TimeSpan
++		[1]	{00:00:00.0780005}	System.TimeSpan
++		[2]	{00:00:00}	System.TimeSpan
++		[3]	{00:00:00.0140014}	System.TimeSpan
++		[4]	{00:00:00.0624004}	System.TimeSpan
++		[5]	{00:00:00.0468003}	System.TimeSpan
++		[6]	{00:00:00.0312002}	System.TimeSpan
++		[7]	{00:00:00}	System.TimeSpan
++		[8]	{00:00:00.0156001}	System.TimeSpan
++		[9]	{00:00:00.0624004}	System.TimeSpan
++		[10]	{00:00:00.0340034}	System.TimeSpan
++		[11]	{00:00:00.0468003}	System.TimeSpan
++		[12]	{00:00:00.1404009}	System.TimeSpan
++		[13]	{00:00:00.0312002}	System.TimeSpan
++		[14]	{00:00:00.2028013}	System.TimeSpan
++		[15]	{00:00:00.0312002}	System.TimeSpan
++		[16]	{00:00:00}	System.TimeSpan
++		[17]	{00:00:00.1092007}	System.TimeSpan
++		[18]	{00:00:00.0156001}	System.TimeSpan
++		[19]	{00:00:00}	System.TimeSpan
++		[20]	{00:00:00.0936006}	System.TimeSpan
++		[21]	{00:00:00.0624004}	System.TimeSpan
++		[22]	{00:00:00}	System.TimeSpan
++		Affichage brut		
+
+
++		ListForAverageMeasure	Count = 17	System.Collections.Generic.List<K2000Rs232App.MainWindow.ClassAverageMeasure>
+		dAllDataAverage	error CS0103: Le nom 'dAllDataAverage' n'existe pas dans le contexte actuel	
+		objArray	error CS0103: Le nom 'objArray' n'existe pas dans le contexte actuel	
+-		lTs	Count = 23	System.Collections.Generic.List<System.TimeSpan>
++		[0]	{00:00:00.0156001}	System.TimeSpan
++		[1]	{00:00:00.0156001}	System.TimeSpan
++		[2]	{00:00:00.2028013}	System.TimeSpan
++		[3]	{00:00:00}	System.TimeSpan
++		[4]	{00:00:00.0468003}	System.TimeSpan
++		[5]	{00:00:00.0468003}	System.TimeSpan
++		[6]	{00:00:00.0156001}	System.TimeSpan
++		[7]	{00:00:00.1404009}	System.TimeSpan
++		[8]	{00:00:00.0156001}	System.TimeSpan
++		[9]	{00:00:00.0624004}	System.TimeSpan
++		[10]	{00:00:00}	System.TimeSpan
++		[11]	{00:00:00.0468003}	System.TimeSpan
++		[12]	{00:00:00.0468003}	System.TimeSpan
++		[13]	{00:00:00.0780005}	System.TimeSpan
++		[14]	{00:00:00.0156001}	System.TimeSpan
++		[15]	{00:00:00.0156001}	System.TimeSpan
++		[16]	{00:00:00.0478004}	System.TimeSpan
++		[17]	{00:00:00.1092007}	System.TimeSpan
++		[18]	{00:00:00}	System.TimeSpan
++		[19]	{00:00:00}	System.TimeSpan
++		[20]	{00:00:00}	System.TimeSpan
++		[21]	{00:00:00.0156001}	System.TimeSpan
++		[22]	{00:00:00.0312002}	System.TimeSpan
++		Affichage brut		
+		iId	1	int
++		NewInstanceOfClassMesureForId2	{K2000Rs232App.ClassMesure}	K2000Rs232App.ClassMesure
++		NewInstanceOfClassMesureForId1	{K2000Rs232App.ClassMesure}	K2000Rs232App.ClassMesure

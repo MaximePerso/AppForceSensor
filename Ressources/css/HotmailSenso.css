@@ -1,0 +1,437 @@
+/*
+ * HotmailSenso.css v1.0.0
+ * Fonction style développée pour l'outil "Hotmail"
+ * Hotmail, developpement pour communication interne
+ *
+ * Concepteur & id : AM
+ * Devp : DW
+ */
+
+ 	/*
+	**********************************************************************
+	**********************************************************************
+	Material icons
+	**********************************************************************
+	**********************************************************************
+	*/
+	@font-face
+	{
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: 400;
+		src: url(MaterialIcons/MaterialIcons-Regular.eot); /* For IE6-8 */
+			src: local('Material Icons'),
+			local('MaterialIcons-Regular'),
+			url(MaterialIcons/MaterialIcons-Regular.woff2) format('woff2'),
+			url(MaterialIcons/MaterialIcons-Regular.woff) format('woff'),
+			url(MaterialIcons/MaterialIcons-Regular.ttf) format('truetype');
+	}
+
+	.material-icons
+	{
+		font-family: 'Material Icons';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 24px;  /* Preferred icon size */
+		display: inline-block;
+		line-height: 1;
+		text-transform: none;
+		letter-spacing: normal;
+		word-wrap: normal;
+		white-space: nowrap;
+		direction: ltr;
+
+		/* Support for all WebKit browsers. */
+		-webkit-font-smoothing: antialiased;
+		/* Support for Safari and Chrome. */
+		text-rendering: optimizeLegibility;
+
+		/* Support for Firefox. */
+		-moz-osx-font-smoothing: grayscale;
+
+		/* Support for IE. */
+		font-feature-settings: 'liga';
+	}
+
+	/*
+	**********************************************************************
+	**********************************************************************
+	Bouton
+	**********************************************************************
+	**********************************************************************
+	*/
+	.CustomBtn160:enabled
+	{
+		display: block;
+		border-radius: 6px;
+		background-color: rgba(66, 139, 202, 1);
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 14px;
+		font-style: oblique;
+		/*padding: 20px;*/
+		width: 160px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 5px;
+	}
+
+	.CustomBtn160:not(:enabled)
+	{
+		display: inline-block;
+		background-color: rgba(66, 139, 202, 1);
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 14px;
+		font-style: oblique;
+		padding: 20px;
+		width: 160px;
+		transition: all 0.5s;
+		cursor: not-allowed;
+		margin: 5px;
+	}
+
+	.CustomBtn200:enabled
+	{
+		display: inline-block;
+		border-radius: 6px;
+		background-color: rgba(66, 139, 202, 1);
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 14px;
+		font-style: oblique;
+		width: 200px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 5px;
+	}
+
+	.CustomBtn200:not(:enabled)
+	{
+		display: inline-block;
+		border-radius: 6px;
+		background-color: rgb(153,204,102);
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 14px;
+		font-style: oblique;
+		width: 200px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 5px;
+	}
+
+	.CustomBtn160x:enabled
+	{
+		display: inline-block;
+		border-radius: 6px;
+		background-color: rgba(66, 139, 202, 1);
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 14px;
+		font-style: oblique;
+		width: 100px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 0px;
+		margin-left: 212px;
+	}
+
+	.CustomBtn160x:not(:enabled)
+	{
+		display: inline-block;
+		border-radius: 6px;
+		background-color: rgb(197,190,151);
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 14px;
+		font-style: oblique;
+		width: 100px;
+		transition: all 0.5s;
+		cursor: not-allowed;
+		margin: 0px;
+		margin-left: 212px;
+	}
+
+	.CustomBtn160xx
+	{
+		width: 50%;
+	}
+
+	.CustomBtn160xx:enabled
+	{
+		width: 110%;
+		height: 0;
+		padding-bottom: 100%;
+		border-radius: 50%;
+		border: 10px solid #cfdcec;
+		overflow: hidden;
+		background: #4679BD;
+		box-shadow: 20px 10px 20px gray;
+		font-size: 1.8em;
+		font-weight: bold;
+		color: #e2eaf3;
+		font-family: Verdana;
+		padding-top: 40%;
+		padding-bottom: 50%;
+	}
+
+	.CustomBtn160xx a
+	{
+		display: block;
+		float: left;
+		width: 100%;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		line-height: 1em;
+		margin-top: -3em;
+		margin-left: 5em;
+		text-align: center;
+		color: #e2eaf3;
+		font-family: Verdana;
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+
+	.CustomBtn160xx:hover
+	{
+		background: #bf9c3a;
+	}
+
+	.CustomBtn160 span
+	{
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+	}
+
+	.CustomBtn160 span:after
+	{
+		content: '\00bb';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		transition: 0.5s;
+	}
+
+	.CustomBtn160:hover span
+	{
+		padding-right: 25px;
+	}
+
+	.CustomBtn160:hover span:after
+	{
+		opacity: 1;
+		right: 0;
+	}
+
+	/*
+	**********************************************************************
+	**********************************************************************
+	Modal
+	**********************************************************************
+	**********************************************************************
+	*/
+	.modal-content
+	{
+		color: #435757;
+		background: rgba(218,223,238,40);
+		font: 1.4em/1 'Noto Sans', sans-serif;
+	}
+
+	input[type=checkbox]
+	{
+		visibility: hidden;
+	}
+
+	/*
+	**********************************************************************
+	**********************************************************************
+	Checkbox
+	**********************************************************************
+	**********************************************************************
+	*/
+	input[type=checkbox]:not(old),
+	input[type=radio ]:not(old)
+	{
+		width: 2em;
+		margin: 0;
+		padding: 0;
+		font-size: 1em;
+		opacity: 0;
+	}
+
+	input[type=checkbox]:not(old) + label,
+	input[type=radio ]:not(old) + label
+	{
+		display: inline-block;
+		margin-left: -2em;
+		line-height: 1em;
+	}
+
+	input[type=checkbox]:not(old) + label > span,
+	input[type=radio ]:not(old) + label > span
+	{
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		margin: 0.1em 0.1em 0.1em 0.1em;
+		border: 0.0625em solid rgb(192,192,192);
+		border-radius: 0.25em;
+		background: rgb(224,224,224);
+		background-image: -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+		background-image: -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+		background-image: -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+		background-image: linear-gradient(rgb(240,240,240),rgb(224,224,224));
+		vertical-align: bottom;
+	}
+
+	input[type=checkbox]:not(old):checked + label > span,
+	input[type=radio ]:not(old):checked + label > span
+	{
+		background-image: -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+		background-image: -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+		background-image: -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+		background-image: linear-gradient(rgb(224,224,224),rgb(240,240,240));
+	}
+
+	input[type=checkbox]:not(old):checked + label > span:before
+	{
+		content: '';
+		color: rgb(153,204,102);
+		display: block;
+		width: 0.75em;
+		height: 0.75em;
+		margin: 0.0625em;
+		//border: 0.0625em solid rgb(115,153,77);
+		border-radius: 0.125em;
+		background-color: rgba(206, 22, 17, 1);
+		background-image: -moz-linear-gradient(rgb(222,189,191),rgba(206, 22, 17, 1));
+		background-image: -o-linear-gradient(rgb(222,189,191),rgba(206, 22, 17, 1));
+		background-image: -webkit-linear-gradient(rgb(222,189,191),rgba(206, 22, 17, 1));
+		background-image: linear-gradient(rgb(222,189,191),rgba(206, 22, 17, 1));
+	}
+
+	input[type=text], select
+	{
+		width: 100%;
+		padding: 12px 20px;
+		margin-left: 10px;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+	}
+
+	/*
+	**********************************************************************
+	**********************************************************************
+	Magnify
+	**********************************************************************
+	**********************************************************************
+	*/
+	.button-magnifier
+	{
+		width:50px;
+		height:50px;
+		cursor:pointer;
+		margin-left:25%;
+		margin-top:25px;
+		border: 1px solid #000;
+		border-radius:50%;
+		position:left;
+	}
+
+	.img-magnifier-container
+	{
+		position: relative;
+	}
+
+	.img-magnifier-glass
+	{
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		border-radius: 100%;
+		cursor: none;
+
+		box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+					0 0 7px 7px rgba(0, 0, 0, 0.25),
+					inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+	}
+
+	/*
+	**********************************************************************
+	**********************************************************************
+	Caroussel
+	**********************************************************************
+	**********************************************************************
+	*/
+	.carousel-indicators .active
+	{
+		background-color:#f39c12;
+		border-color:#f39c12;
+		opacity:1;
+	}
+
+	.carousel-indicators li
+	{
+		border:1px solid #fff;
+		background-color:#f39c12;
+		opacity:0.5;
+	}
+
+	.carousel-indicators
+	{
+		top: none;
+		bottom:10px;
+	}
+
+	.liked
+	{
+		font-weight: bold;
+	}
+
+	.body-content
+	{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
+		/*
+	**********************************************************************
+	**********************************************************************
+	Nav Bar
+	**********************************************************************
+	**********************************************************************
+	*/
+	
+	.dropdown-menu {
+    position: absolute;
+    /* top: 100%; */
+    /* left: 0; */
+    /* z-index: 1000; */
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #e6e6e6;
+    /* background-clip: padding-box; */
+    /* border: 1px solid #ccc; */
+    /* border: 1px solid rgba(0,0,0,.15); */
+    /* border-radius: 4px; */
+    /* -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175); */
+    /* box-shadow: 0 6px 12px rgba(0,0,0,.175); */
+    opacity: initial;
